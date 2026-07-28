@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Vista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="hero-sec">
+        <h1 class="primary" id="name"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-sun-icon lucide-cloud-sun"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/></svg>Weather-Vista</h1>
+        <h3 class="secondary" id="tagline">Know the weather before you go</h3>
+        <form class="search-bar">
+            <input type="text" id="search" placeholder="Search For a City">
+            <button type="submit" id="search-btn" >Search</button>
+        </form>
+    </div>
+    <div class="loading-card">
+        <div class="loader"></div>
+        <p class="primary">Searching weather...</p>
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-line"></div>
+        <div class="skeleton skeleton-line short"></div>
+    </div>
+    <div class="card-sec">
+        <div class="main-card">
+            <div class="heading primary">
+                <h3>Current Weather</h3>
+            </div>
+            <div class="recent-time">
+                <h3 class="day primary"></h3>
+                <h3 class="time primary"></h3>
+            </div>
+            <div class="content-1">
+                <div class="pic"></div>
+                <div class="info">
+                    <div class="temp primary"></div>
+                    <div class="condition secondary"></div>
+                    <div class="city primary"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="humidity">
+                <div class="icon secondary"><i class="fa-solid fa-water fa-rotate-180"></i></div>
+                <div class="hum-data primary"></div>
+                <div class="title secondary">Humidity</div>
+            </div>
+            <div class="rain">
+                <div class="icon secondary"><i class="fa-solid fa-cloud-rain"></i></div>
+                <div class="rain-data primary"></div>
+                <div class="title secondary">Rain</div>
+            </div>
+            <div class="wind">
+                <div class="icon secondary"><i class="fa-solid fa-wind"></i></div>
+                <div class="wind-data primary"></div>
+                <div class="title secondary">Wind</div>
+            </div>
+            <div class="uv">
+                <div class="icon secondary"><i class="fa-solid fa-sun"></i></div>
+                <div class="uv-data primary"></div>
+                <div class="title secondary">UV Index</div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="secondary">
+        <p>Designed and Developed by Sumana Howlader ♥</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
