@@ -210,7 +210,7 @@ git clone https://github.com/sumana9106-sketch/weather-vista.git
 ```
 
 ```bash
-cd Weather-Forecast
+cd weather-vista
 ```
 
 Open
