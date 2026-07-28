@@ -38,7 +38,7 @@ Unlike ordinary weather apps, this project focuses on delivering a premium user 
 
 # 🚀 Live Demo
 
-> 🔗 **Coming Soon**
+> 🔗 **(https://sumana9106-sketch.github.io/weather-vista/)**
 
 
 ---
